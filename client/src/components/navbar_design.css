@@ -1,0 +1,21 @@
+.navbar {
+  display: flex;
+  justify-content: space-between; /* Space between logo and logout button */
+  align-items: center;
+  height: calc(100vh / 14); /* 1/14 of the viewport height */
+  padding: 0 20px;
+  background-color: #333; /* Add your preferred background color */
+  color: white; /* Add your preferred text color */
+}
+
+.title {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  font-size: 1.8rem; /* Add your preferred font size */
+}
+
+.logo {
+  width: 80px; /* Set the width of the logo */
+  height: auto; /* Maintain the aspect ratio */
+}

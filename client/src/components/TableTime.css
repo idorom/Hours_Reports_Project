@@ -1,0 +1,184 @@
+﻿/* Table container */
+.time-table-container {
+  font-family: 'Arial', sans-serif;
+  margin: 0 0.4vw ;
+  background-color: #faf0f7;
+  border-radius: 12px; /* Rounded corners for the entire table */
+  /* width: 98%; */
+  /* max-width: 800px; */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+  overflow: hidden;
+}
+
+/* Main table styling */
+.time-table {
+  width: 100%;
+  border-collapse: collapse;
+  border-radius: 12px; /* Rounded border for the entire table */
+  margin: 0;
+  padding: 0; /* Remove padding from the table */
+}
+
+/* Header styling */
+.time-table thead th {
+  background-color: #007bff; /* Stylish blue header */
+  color: white;
+  font-weight: bold;
+  text-align: center;
+  padding: 8px 5px;
+  border-left: 1.5px solid #007bff; /* Added border on the left (purple) */
+  border-right: 1.5px solid #007bff; /* Added border on the right (purple) */
+}
+
+/* Column width adjustments */
+.time-table tbody td:nth-child(1) {
+  width: 9.5vw; /* Column 1 width */
+}
+
+.time-table tbody td:nth-child(2) {
+  width: 6vw; /* Column 2 width */
+}
+
+/* Input width adjustments */
+.time-table tbody td:nth-child(1) input {
+  width: 9.5vw; /* Column 1 width */
+}
+
+.time-table tbody td:nth-child(2) input {
+  width: 5vw; /* Input width for column 2 */
+}
+
+/* Column width adjustments */
+.time-table tbody td:nth-child(3) {
+  width: 3.5vw; /* Column 1 width */
+}
+
+/* Column width adjustments */
+.time-table tbody td:nth-child(4) {
+  width: 3.5vw; /* Column 1 width */
+}
+
+/* Column width adjustments */
+.time-table tbody td:nth-child(5) {
+  width: 5vw; /* Column 1 width */
+}
+
+/* Column width adjustments */
+.time-table tbody td:nth-child(6) {
+  width: 1.5vw; /* Column 1 width */
+}
+
+/* Cell styling */
+.time-table tbody td {
+  padding-top: 0.35vh; /* Remove padding from cells */
+  padding-bottom: 0.35vh; /* Remove padding from cells */
+  padding-right: 0.35vw; /* Remove padding from cells */
+  padding-left: 0.35vw; /* Remove padding from cells */
+  text-align: center;
+  border: none; /* Removed borders (yellow marked area) */
+  /*background-color: #ece6e4;*/ /* Stylish blue header */
+}
+
+/* Purple border for specific columns (1, 2, 3, and 4) */
+.time-table tbody td:nth-child(2),
+.time-table tbody td:nth-child(3),
+.time-table tbody td:nth-child(4),
+.time-table tbody td:nth-child(5) {
+ 
+}
+
+/* Select and input styling in cells */
+.time-table tbody td input {
+  font-family: 'Arial', sans-serif;
+  height: 30px;
+  font-size: 1em; /* Increased font size */
+  border: 1px solid #ccc;
+  border-radius: 6px; /* Rounded input/select fields */
+}
+
+/* my-custom-select styles for react-select */
+.my-custom-select__control {
+  font-family: 'Arial', sans-serif;
+  font-size: 1em;
+  height: 20px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+}
+
+.my-custom-select__menu {
+  font-family: 'Arial', sans-serif;
+  font-size: 1em;
+}
+
+.my-custom-select__option {
+  font-family: 'Arial', sans-serif;
+  font-size: 1em;
+}
+
+.my-custom-select__option--is-selected {
+  background-color: #007bff !important;
+  color: white !important;
+}
+
+.my-custom-select__control.is-invalid {
+  border: 2px solid red !important;
+}
+
+.my-custom-select__control.is-valid {
+  border: 1px solid #ccc !important;
+}
+
+/* Adjust styles for other parts of the select as needed */
+.my-custom-select__menu {
+  z-index: 1000; /* Ensures dropdown menu displays above other elements */
+}
+
+/* Adjust widths of the columns */
+.time-table tbody td:nth-child(3) input,
+.time-table tbody td:nth-child(4) input {
+  width: 3ch; /* Set input width to fit 2 characters */
+}
+
+.time-table tbody td:nth-child(5) input {
+  width: 8ch; /* Set input width to fit 6.5 characters */
+}
+
+/* Center text in inputs for columns 3, 4, and 5 */
+.time-table tbody td:nth-child(3) input,
+.time-table tbody td:nth-child(4) input,
+.time-table tbody td:nth-child(5) input {
+  text-align: center;
+}
+
+/* Remove padding from buttons and apply styles */
+.time-table tbody td button {
+  border: none;
+  background-color: #28a745;
+  color: white;
+  border-radius: 5px;
+  padding: 4px 10px;
+  /* font-size: 1em; */ /* Increased font size */
+  cursor: pointer;
+}
+
+.time-table tbody td button:hover {
+  background-color: #218838;
+}
+
+/* Row striping */
+.time-table tbody tr:nth-child(even) {
+  background-color: #f1f9ff;
+}
+
+/* Adjust for small screens */
+@media (max-width: 600px) {
+  .time-table thead th,
+  .time-table tbody td {
+    /* font-size: 1em; */ /* Increased font size */
+  }
+  .time-table tbody td input,
+  .time-table tbody td select {
+    /* font-size: 1em; */ /* Increased font size */
+    background-color: #f1f9ff;
+  }
+}

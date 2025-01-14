@@ -1,0 +1,211 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f4f4f9;
+}
+
+.HourReportPage-background {
+  position: relative;
+  height: calc(100vh - calc(100vh / 14));
+  display: flex;
+  background: linear-gradient(135deg, #007bff 0%, #007bff 100%);
+}
+
+.HourReportPage-background::before {
+  content: '';
+  position: relative;
+  top: -calc(100vh / 14);
+  right: -150px;
+  width: 400px;
+  height: 400px;
+  background-color: rgba(255, 255, 255, 0.1);
+  border-radius: 50%;
+  animation: float 6s ease-in-out infinite;
+}
+
+/* Another abstract shape */
+.HourReportPage-background::after {
+  content: '';
+  position: relative;
+  top: calc(50vh - calc(50vh / 14));
+  left: 150px;
+  width: 400px;
+  height: 400px;
+  background-color: rgba(255, 255, 255, 0.1);
+  border-radius: 50%;
+  /* z-index: 1; */
+  animation: float-reverse 8s ease-in-out infinite;
+}
+
+.container {
+  margin: 2vh auto;
+  text-align: center;
+  position: relative;
+  background-color: rgba(255, 255, 255, 0.9); /* Light background for the form */
+  border-radius: 15px;
+  box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
+  width: 45%;
+}
+
+
+h2 {
+  font-size: 24px;
+  margin-bottom: 16px;
+}
+
+p {
+  font-size: 16px;
+  padding-right: 20px;
+}
+
+.calendar {
+  padding-right: 10px;
+  margin-bottom: 15px;
+}
+
+.ParentComponent {
+    display: flex;
+    flex-direction: column; /* Stack the SummeryValue components vertically */
+    align-items: center; /* Center align items horizontally */
+    width: 20%; /* Ensure the component takes full width of the container */
+    margin: 0.5vh auto 0.5vh auto ;
+    margin-top: 15px;
+  }
+
+.time-table {
+  margin: 0 auto; /* Center the component */
+
+}
+
+button {
+  border: none;
+  cursor: pointer;
+}
+
+button:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+.submitChanges{
+  padding: 8px 18px;
+  border: none;
+  cursor: pointer;
+  border-radius: 16px;
+  margin: 0.5vh 0.2vw 0.5vh 0.2vw;
+}
+
+.submitChangesSave{
+  background-color: #007bff;
+  color: #fff;
+}
+
+.submitChangesDelete{
+  background-Color: #fff;
+  color: #007bff;
+}
+
+
+/* Responsive styles */
+@media (max-width: 767px) {
+  h2 {
+      font-size: 20px;
+  }
+
+  p {
+      font-size: 14px;
+  }
+
+  .calendar {
+      padding-right: 10px;
+  }
+
+  .time-table {
+      margin-top: 20px;
+  }
+
+  button {
+      padding: 10px 20px;
+  }
+}
+
+@media (max-width: 576px) {
+  .container {
+      width: 90%;
+  }
+
+  h2 {
+      font-size: 18px;
+  }
+
+  p {
+      padding-right: 10px;
+  }
+
+  .calendar {
+      padding-right: 10px;
+  }
+
+  .time-table {
+      margin-top: 10px;
+  }
+
+  button {
+      padding: 8px 16px;
+  }
+}
+
+@media (max-width: 430px) {
+  .container {
+      width: 95%;
+  }
+
+  h2 {
+      font-size: 16px;
+  }
+
+  p {
+      font-size: 12px;
+      padding-right: 5px;
+  }
+
+  .calendar {
+      padding-right: 5px;
+  }
+
+  .time-table {
+      margin-top: 5px;
+  }
+
+  button {
+      padding: 6px 12px;
+  }
+}
+
+@media (max-width: 360px) {
+  .container {
+      width: 100%;
+  }
+
+  h2 {
+      font-size: 14px;
+  }
+
+  p {
+      font-size: 10px;
+      padding-right: 2px;
+  }
+
+  .calendar {
+      padding-right: 2px;
+  }
+
+  .time-table {
+      margin-top: 2px;
+  }
+
+  button {
+      padding: 4px 8px;
+  }
+}

@@ -1,0 +1,22 @@
+.notification {
+    padding: 2px 2px;
+    border-radius: 5px;
+    font-weight: normal;
+    margin: 0.5vh auto 0.5vh auto ;   
+    
+  }
+  
+  .notification.success {
+    background-color: #4CAF50; /* Green */
+    color: white;
+  }
+  
+  .notification.failure {
+    background-color: #f4f4f9;
+    color:  #f44336; /* Red */
+    border:2px solid #f44336;
+    
+  }
+
+
+

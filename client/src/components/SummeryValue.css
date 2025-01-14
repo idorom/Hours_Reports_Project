@@ -1,0 +1,23 @@
+.SummeryValue {
+  display: grid;
+  grid-template-columns: auto 0.55vw; /* Auto width for title and fixed width for value */
+  grid-gap: 0.01vw; /* Space between the title and the value */
+  align-items: center; /* Center align items vertically */
+  width: 99%; /* Ensure each SummeryValue takes full width of the container */
+  margin-bottom: 0.5vh; /* Add some spacing between the stacked SummeryValue components */
+}
+
+.title {
+  font-size: 1rem; /* Add your preferred font size */
+  text-align: left; /* Align text to the left */
+}
+
+.valueText {
+  padding: 5px 8px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  background-color: rgb(219, 218, 218);
+  font-size: 1rem; /* Add your preferred font size */
+  width: 2.2vw; /* Set a fixed width */
+  text-align: center; /* Align text to the center */
+}
